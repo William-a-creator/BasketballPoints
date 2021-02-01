@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+
+    public static int points(int twoPointers, int threePointers){
+        int totalPoints = 0;
+        totalPoints = (twoPointers * 2) + (threePointers * 3);
+        return totalPoints;
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter points");
+        int amountOfTwoPointers = Integer.valueOf(in.nextLine());
+        int amountOfThreePointers = Integer.valueOf(in.nextLine());
+
+        System.out.println(points(amountOfTwoPointers, amountOfThreePointers));
+    }
+}
